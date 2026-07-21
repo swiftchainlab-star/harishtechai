@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Complete iOS Development Course - Master Swift & SwiftUI from scratch with Abhishek Patel on HarishTechAi." />
+  <title>iOS Development Course | HarishTechAi</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/instructor.jpg" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- FontAwesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <span>Harish</span>Tech<span>Ai</span>
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="index.html#tutorials" class="nav-link">Tutorial</a>
+        <a href="docs.html" class="nav-link">Docs</a>
+        <a href="hackathons.html" class="nav-link">Hackathons</a>
+        <a href="index.html#contact" class="nav-link">Contact Us</a>
+        <a href="coding-practice.html" class="nav-cta-mobile">Coding Practice</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="coding-practice.html" class="btn btn-primary">Coding Practice</a>
+      </div>
+      <button class="mobile-toggle" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="course-detail-section">
+      <div class="container">
+        <!-- Back Link -->
+        <div style="margin-bottom: 30px;">
+          <a href="index.html"
+            style="color: #ffea00; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px;">
+            <i class="fa-solid fa-arrow-left"></i> Back to Home
+          </a>
+        </div>
+
+        <div class="course-detail-grid">
+          <!-- Left Column Wrapper -->
+          <div class="course-left-col">
+            <!-- Left Main Card -->
+            <div class="course-detail-main-card">
+              <img src="assets/course-ios.jpg" alt="iOS Development Full Course Roadmap" class="course-detail-img">
+
+              <h1 class="course-detail-title">iOS Full Development Course</h1>
+
+              <p class="course-detail-desc">
+                Master iOS App Development from scratch using Swift and SwiftUI. This course is designed to take you
+                from beginner to professional iOS developer by covering everything from Swift programming fundamentals
+                to building production-ready applications. Learn modern UI development with SwiftUI, networking with
+                REST APIs, local storage, Firebase integration, MVVM architecture, app optimization, testing, and App
+                Store deployment. By the end of this course, you'll have built multiple real-world projects and gained
+                the skills needed to publish your own apps and prepare for iOS developer interviews.
+              </p>
+
+              <div class="course-badges-horizontal">
+                <span class="course-detail-badge"><i class="fa-solid fa-play"></i> 120+ Video Lectures</span>
+                <span class="course-detail-badge"><i class="fa-solid fa-clock"></i> 70+ Hours of Content</span>
+                <span class="course-detail-badge"><i class="fa-solid fa-mobile-screen-button"></i> 15+ Real-World iOS
+                  Projects</span>
+                <span class="course-detail-badge"><i class="fa-solid fa-download"></i> Downloadable Notes &amp; Source
+                  Code</span>
+                <span class="course-detail-badge"><i class="fa-solid fa-graduation-cap"></i> Beginner to Advanced</span>
+                <span class="course-detail-badge"><i class="fa-solid fa-cloud-arrow-up"></i> App Store Deployment</span>
+              </div>
+            </div>
+
+            <!-- Detailed Syllabus Accordion Container -->
+            <div class="syllabus-container">
+              <div class="syllabus-header">
+                <h2>Detailed Syllabus</h2>
+                <div class="syllabus-actions">
+                  <button class="syllabus-btn" id="expandAllBtn">Expand All</button>
+                  <button class="syllabus-btn" id="collapseAllBtn">Collapse All</button>
+                </div>
+              </div>
+
+              <div class="accordion">
+                <!-- Module 01 -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span>Module 01 – Introduction to iOS Development</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <ul>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> What is iOS?</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Apple Ecosystem</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Install Xcode</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Swift Playground</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Course Roadmap</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Module 02 -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span>Module 02 – Swift Programming Language</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <ul>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Variables &amp; Constants</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Data Types</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Operators</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Control Flow</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Functions</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Closures</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Enums</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Structs &amp; Classes</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Optionals</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Protocols</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Error Handling</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Generics</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Module 03 -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span>Module 03 – Xcode &amp; SwiftUI Basics</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <ul>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Xcode Interface</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Project Structure</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Views</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Modifiers</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Navigation</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Layouts</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Stacks</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Lists</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Forms</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Module 04 -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span>Module 04 – UI Development</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <ul>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Buttons</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> TextField</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Image</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> ScrollView</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Grid</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Tab Bar</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Navigation Bar</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Dark Mode</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Animations</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Module 05 -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span>Module 05 – State Management</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <ul>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> @State</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> @Binding</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> @ObservedObject</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> @StateObject</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> @EnvironmentObject</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> MVVM Architecture</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Module 06 -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span>Module 06 – Networking</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <ul>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> REST APIs</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> URLSession</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> JSON Parsing</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Codable</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Async/Await</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Error Handling</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Module 07 -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span>Module 07 – Local Storage</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <ul>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> UserDefaults</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> File Manager</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Keychain</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> SQLite</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Core Data</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> SwiftData</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Module 08 -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span>Module 08 – Firebase Integration</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <ul>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Authentication</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Firestore</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Realtime Database</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Storage</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Push Notifications</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Analytics</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Module 09 -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span>Module 09 – Advanced SwiftUI</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <ul>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Custom Components</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Reusable Views</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> NavigationStack</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Sheets</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Alerts</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Gestures</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Charts</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Module 10 -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span>Module 10 – Device Features</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <ul>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Camera</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Photo Picker</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Location (GPS)</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Maps</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Contacts</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Face ID / Touch ID</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Notifications</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Module 11 -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span>Module 11 – Architecture</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <ul>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> MVC</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> MVVM</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Clean Architecture</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Dependency Injection</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Repository Pattern</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Module 12 -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span>Module 12 – Testing &amp; Debugging</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <ul>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Unit Testing</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> UI Testing</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Debugging</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Instruments</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Performance Optimization</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Module 13 -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span>Module 13 – App Deployment</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <ul>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Apple Developer Account</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Certificates</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Provisioning Profiles</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> TestFlight</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> App Store Submission</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> App Review Process</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Module 14 -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span>Module 14 – Real World Projects</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <ul>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Weather App</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Notes App</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Chat App</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> E-Commerce App</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Expense Tracker</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Food Delivery App</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Social Media App</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Real World Projects -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <span>🌍 Real-World Projects</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="accordion-content">
+                    <ul>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Calculator App</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> To-Do App</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Notes App</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Weather App</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Movie App</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Music Player</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Expense Tracker</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> QR Scanner</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Chat Application</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Food Delivery App</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> E-Commerce App</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Social Media App</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Ride Booking App</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> Banking App</li>
+                      <li><i class="fa-solid fa-circle" style="font-size: 6px;"></i> AI Chat App</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Sidebar Stack -->
+          <div class="course-sidebar-stack">
+            <!-- Card 1: What You'll Learn -->
+            <div class="course-sidebar-card">
+              <h3>What You'll Learn</h3>
+              <ul class="learn-list">
+                <li><i class="fa-solid fa-circle-check" style="color: #ffea00; margin-right: 8px;"></i> Swift
+                  Programming from Scratch</li>
+                <li><i class="fa-solid fa-circle-check" style="color: #ffea00; margin-right: 8px;"></i> Build Beautiful
+                  iOS Apps with SwiftUI</li>
+                <li><i class="fa-solid fa-circle-check" style="color: #ffea00; margin-right: 8px;"></i> REST APIs &amp;
+                  Firebase Integration</li>
+                <li><i class="fa-solid fa-circle-check" style="color: #ffea00; margin-right: 8px;"></i> App Architecture
+                  &amp; State Management</li>
+                <li><i class="fa-solid fa-circle-check" style="color: #ffea00; margin-right: 8px;"></i> Publish Apps on
+                  the Apple App Store</li>
+              </ul>
+            </div>
+
+            <!-- Card 2: Pricing -->
+            <div class="course-sidebar-card">
+              <h3>Course Price</h3>
+              <div class="course-price-container">
+                <div class="course-price-tag">Free</div>
+                <a href="https://www.youtube.com/playlist?list=PLRiMEyYiSEfU" target="_blank" class="btn-youtube-sidebar">
+                  <i class="fa-brands fa-youtube"></i> Watch on YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span>Harish</span>Tech<span>Ai</span>
+        </a>
+        <p>
+          Empowering the next generation of software engineers through
+          practical building, expert guidance, and state-of-the-art coding
+          resources.
+        </p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#tutorials">Tutorials</a></li>
+          <li><a href="docs.html">Docs</a></li>
+          <li><a href="hackathons.html">Hackathons</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="footer-icons">
+          <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/917611140772" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        &copy; 2026 HarishTechAi. All rights reserved. Designed by Abhishek Patel.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+
+  <!-- Accordion Functionality Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const headers = document.querySelectorAll(".accordion-header");
+      headers.forEach(header => {
+        header.addEventListener("click", () => {
+          const item = header.parentElement;
+          const content = header.nextElementSibling;
+
+          // Toggle active class
+          item.classList.toggle("active");
+
+          if (item.classList.contains("active")) {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } else {
+            content.style.maxHeight = "0px";
+          }
+        });
+      });
+
+      const expandAllBtn = document.getElementById("expandAllBtn");
+      const collapseAllBtn = document.getElementById("collapseAllBtn");
+
+      if (expandAllBtn) {
+        expandAllBtn.addEventListener("click", () => {
+          document.querySelectorAll(".accordion-item").forEach(item => {
+            item.classList.add("active");
+            const content = item.querySelector(".accordion-content");
+            content.style.maxHeight = content.scrollHeight + "px";
+          });
+        });
+      }
+
+      if (collapseAllBtn) {
+        collapseAllBtn.addEventListener("click", () => {
+          document.querySelectorAll(".accordion-item").forEach(item => {
+            item.classList.remove("active");
+            const content = item.querySelector(".accordion-content");
+            content.style.maxHeight = "0px";
+          });
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="HarishTechAi - Master coding practice, iOS development, Web development, and unlock your career potential with Abhishek Patel." />
+  <title>HarishTechAi | Learn, Code, & Build</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/instructor.jpg" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- FontAwesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="#home" class="logo">
+        <span>Harish</span>Tech<span>Ai</span>
+      </a>
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#tutorials" class="nav-link">Tutorial</a>
+        <a href="docs.html" class="nav-link">Docs</a>
+        <a href="hackathons.html" class="nav-link">Hackathons</a>
+        <a href="#contact" class="nav-link">Contact Us</a>
+        <a href="coding-practice.html" class="nav-cta-mobile">Coding Practice</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="coding-practice.html" class="btn btn-primary">Coding Practice</a>
+      </div>
+      <button class="mobile-toggle" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section (Step 1) -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge">UNLOCK YOUR POTENTIAL</span>
+          <h1 class="hero-title">Learn Future<br>Technologies<br>with HarishTechAi</h1>
+          <p class="hero-desc">
+            Master Cyber Security, Blockchain, System Design (LLD & HLD), and iOS Development with project-based
+            learning, interview preparation, and complete career roadmaps.
+          </p>
+          <div class="hero-cta-buttons">
+            <a href="#learning" class="btn-learning">Start Free Learning</a>
+            <a href="https://www.youtube.com/@HarishTechAi" target="_blank" class="btn-youtube">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+          <div class="social-wrapper">
+            <h3>Connect with us:</h3>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/abhishek-patel-b68ab4277/" target="_blank" class="social-icon linkedin" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.youtube.com/@HarishTechAi" target="_blank" class="social-icon youtube" title="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="https://www.instagram.com/harishtechai?igsh=MWxvNGt5Ym0wa3p4ZQ==" target="_blank" class="social-icon instagram" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/share/1BzySK3huU/" target="_blank" class="social-icon facebook" title="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://whatsapp.com/channel/0029VbDMzARHQbS3D6PaCd0p" target="_blank" class="social-icon whatsapp" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image-container">
+          <div class="glowing-orb"></div>
+          <div class="dashboard-container">
+            <!-- Dashboard Header: Window controls and Tab selectors -->
+            <div class="dashboard-header">
+              <div class="window-controls">
+                <span class="control-dot close"></span>
+                <span class="control-dot minimize"></span>
+                <span class="control-dot expand"></span>
+              </div>
+              <div class="dashboard-tabs">
+                <button class="tab-btn active" data-tab="ios">
+                  <i class="fa-brands fa-apple"></i> iOS
+                </button>
+                <button class="tab-btn" data-tab="sys-design">
+                  <i class="fa-solid fa-sitemap"></i> HLD/LLD
+                </button>
+                <button class="tab-btn" data-tab="cyber">
+                  <i class="fa-solid fa-shield-halved"></i> Cyber
+                </button>
+                <button class="tab-btn" data-tab="blockchain">
+                  <i class="fa-solid fa-cubes"></i> Chain
+                </button>
+              </div>
+            </div>
+
+            <!-- Dashboard Screens -->
+            <div class="dashboard-content">
+              <!-- Screen 1: iOS -->
+              <div class="dash-screen active" id="dash-ios">
+                <div class="ios-grid">
+                  <div class="code-editor">
+                    <div class="editor-header">
+                      <span class="file-name"><i class="fa-solid fa-file-code"></i> CourseApp.swift</span>
+                    </div>
+                    <div class="code-body">
+                      <pre><code><span class="keyword">import</span> SwiftUI
+
+<span class="keyword">struct</span> MainView: View {
+  <span class="keyword">var</span> body: <span class="keyword">some</span> View {
+    VStack {
+      Text(<span class="string">"Learn iOS Development"</span>)
+        .font(.title)
+        .foregroundColor(.yellow)
+      Spacer()
+    }
+  }
+}</code></pre>
+                    </div>
+                  </div>
+                  <div class="phone-simulator">
+                    <div class="simulator-inner">
+                      <div class="phone-notch"></div>
+                      <div class="phone-status-bar">
+                        <span>9:41</span>
+                        <div class="status-icons">
+                          <i class="fa-solid fa-signal"></i>
+                          <i class="fa-solid fa-wifi"></i>
+                          <i class="fa-solid fa-battery-full"></i>
+                        </div>
+                      </div>
+                      <div class="phone-screen-content">
+                        <div class="swift-glow-logo">
+                          <i class="fa-brands fa-swift"></i>
+                        </div>
+                        <h3>iOS Course Active</h3>
+                        <div class="ios-progress-container">
+                          <div class="ios-circular-bar">
+                            <svg viewBox="0 0 100 100">
+                              <circle cx="50" cy="50" r="40"></circle>
+                              <circle cx="50" cy="50" r="40" class="progress-fill-circle"></circle>
+                            </svg>
+                            <div class="progress-number">0%</div>
+                          </div>
+                        </div>
+                        <span class="simulator-state">Ready</span>
+                        <button class="simulator-action-btn">Compile & Run</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Screen 2: HLD & LLD -->
+              <div class="dash-screen" id="dash-sys-design">
+                <div class="sys-design-tabs">
+                  <button class="sys-tab-btn active" data-mode="hld">System Architecture (HLD)</button>
+                  <button class="sys-tab-btn" data-mode="lld">Class Blueprint (LLD)</button>
+                </div>
+                <div class="sys-design-viewport">
+                  <div class="hld-view active">
+                    <div class="topology-wrapper">
+                      <div class="sys-node client-node">
+                        <div class="node-icon"><i class="fa-solid fa-desktop"></i></div>
+                        <span>User Client</span>
+                      </div>
+                      <div class="sys-node lb-node">
+                        <div class="node-icon"><i class="fa-solid fa-shuffle"></i></div>
+                        <span>Load Balancer</span>
+                      </div>
+                      <div class="sys-services-group">
+                        <div class="sys-node service-node">
+                          <div class="node-icon"><i class="fa-solid fa-gears"></i></div>
+                          <span>Auth Microservice</span>
+                        </div>
+                        <div class="sys-node service-node">
+                          <div class="node-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                          <span>Learning Service</span>
+                        </div>
+                      </div>
+                      <div class="sys-storage-group">
+                        <div class="sys-node db-node">
+                          <div class="node-icon"><i class="fa-solid fa-database"></i></div>
+                          <span>PostgreSQL</span>
+                        </div>
+                        <div class="sys-node redis-node">
+                          <div class="node-icon"><i class="fa-solid fa-server"></i></div>
+                          <span>Redis Cache</span>
+                        </div>
+                      </div>
+                    </div>
+                    <svg class="sys-connections">
+                      <!-- Connect lines via absolute/relative SVG lines styled in CSS -->
+                    </svg>
+                  </div>
+                  <div class="lld-view">
+                    <div class="lld-diagram">
+                      <div class="lld-class">
+                        <div class="class-title">CourseManager</div>
+                        <div class="class-props">
+                          - courses: List&lt;Course&gt;<br>
+                          - dbConn: DBConnector
+                        </div>
+                        <div class="class-methods">
+                          + fetchAllCourses()<br>
+                          + enrollStudent(id)
+                        </div>
+                      </div>
+                      <div class="lld-connector">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                      </div>
+                      <div class="lld-class interface">
+                        <div class="class-title">&lt;&lt;Interface&gt;&gt;<br>DBConnector</div>
+                        <div class="class-props"></div>
+                        <div class="class-methods">
+                          + connect()<br>
+                          + query(sql)
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Screen 3: Cybersecurity -->
+              <div class="dash-screen" id="dash-cyber">
+                <canvas id="cyber-matrix-rain"></canvas>
+                <div class="cyber-layout">
+                  <div class="cyber-terminal">
+                    <div class="terminal-header">
+                      <span><i class="fa-solid fa-terminal"></i> security_audit.sh</span>
+                    </div>
+                    <div class="terminal-body" id="cyber-terminal-logs">
+                      <!-- Filled by JS -->
+                    </div>
+                  </div>
+                  <div class="cyber-status-panel">
+                    <div class="radar-box">
+                      <div class="radar-circle">
+                        <div class="radar-sweep"></div>
+                        <div class="radar-dot dot1"></div>
+                        <div class="radar-dot dot2"></div>
+                      </div>
+                    </div>
+                    <div class="security-status">
+                      <i class="fa-solid fa-shield-halved secure-icon"></i>
+                      <span class="status-lbl">SECURED</span>
+                    </div>
+                    <div class="key-decrypter">
+                      <span class="decrypter-label">KEY STRENGTH</span>
+                      <div class="decrypter-code" id="decrypter-key">DECRYPTING...</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Screen 4: Blockchain -->
+              <div class="dash-screen" id="dash-blockchain">
+                <div class="blockchain-layout">
+                  <div class="chain-viz">
+                    <div class="chain-block block-validated">
+                      <div class="block-header-title">Block #201</div>
+                      <div class="block-detail">Hash: 0000x9a2f...</div>
+                      <div class="block-detail">Nonce: 94812</div>
+                      <div class="block-tag secure-tag">VALIDATED</div>
+                    </div>
+                    <div class="chain-link-arrow"><i class="fa-solid fa-link"></i></div>
+                    <div class="chain-block block-validated">
+                      <div class="block-header-title">Block #202</div>
+                      <div class="block-detail">Hash: 0000x5c7b...</div>
+                      <div class="block-detail">Nonce: 18274</div>
+                      <div class="block-tag secure-tag">VALIDATED</div>
+                    </div>
+                    <div class="chain-link-arrow"><i class="fa-solid fa-link"></i></div>
+                    <div class="chain-block block-unmined" id="target-mine-block">
+                      <div class="block-header-title">Block #203</div>
+                      <div class="block-detail" id="bc-hash-lbl">Hash: 8d2c49b01...</div>
+                      <div class="block-detail" id="bc-nonce-lbl">Nonce: 29814</div>
+                      <div class="block-tag mining-tag">UNMINED</div>
+                    </div>
+                  </div>
+                  <div class="blockchain-controls">
+                    <div class="network-stat">
+                      <span>NETWORK HASHRATE</span>
+                      <h4 class="hash-rate-val">68.4 MH/s</h4>
+                    </div>
+                    <button class="blockchain-btn" id="mine-block-btn">
+                      <i class="fa-solid fa-gear"></i> Start Mining
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Will You Get Section (Step 2) -->
+    <section id="tutorials" class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Course Features</span>
+          <h2 class="section-title">What Will You Get</h2>
+          <p class="section-subtitle">
+            Explore our premium project-based courses with industry-standard roadmaps and practice.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Card 1: System Design -->
+          <div class="course-card">
+            <div class="course-card-banner">
+              <img src="assets/course-sysdesign.jpg" alt="System Design Course" class="course-banner-img">
+              <span class="live-status-badge">
+                <span class="live-dot"></span> Live
+              </span>
+            </div>
+            <div class="course-card-content">
+              <div class="course-card-meta">
+                <span class="course-badge badge-purple">ZERO TO ADVANCED</span>
+                <span class="course-lectures">16 Lectures</span>
+              </div>
+              <h3 class="course-card-title">Complete System Design Course</h3>
+              <span class="course-instructor">by Abhishek Patel</span>
+              <p class="course-card-desc">
+                Master HLD & LLD with real-world architecture, case studies, and interview preparation.
+              </p>
+              <div class="course-card-action">
+                <a href="system-design.html" class="btn-learning-action">Start Learning</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: iOS Development -->
+          <div class="course-card">
+            <div class="course-card-banner">
+              <img src="assets/course-ios.jpg" alt="iOS Development Course" class="course-banner-img">
+              <span class="live-status-badge">
+                <span class="live-dot"></span> Live
+              </span>
+            </div>
+            <div class="course-card-content">
+              <div class="course-card-meta">
+                <span class="course-badge badge-purple">ZERO TO ADVANCED</span>
+                <span class="course-lectures">25+ Projects</span>
+              </div>
+              <h3 class="course-card-title">Complete iOS Development Course</h3>
+              <span class="course-instructor">by Abhishek Patel</span>
+              <p class="course-card-desc">
+                Build native iOS apps using Swift and SwiftUI. Master MVVM architecture, Core Data, and App Store
+                deployment.
+              </p>
+              <div class="course-card-action">
+                <a href="ios-development.html" class="btn-learning-action">Start Learning</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Cyber Security -->
+          <div class="course-card">
+            <div class="course-card-banner">
+              <img src="assets/course-cyber.jpg" alt="Cyber Security Course" class="course-banner-img">
+              <span class="live-status-badge">
+                <span class="live-dot"></span> Live
+              </span>
+            </div>
+            <div class="course-card-content">
+              <div class="course-card-meta">
+                <span class="course-badge badge-purple">ZERO TO ADVANCED</span>
+                <span class="course-lectures">15+ Labs</span>
+              </div>
+              <h3 class="course-card-title">Complete Cyber Security Course</h3>
+              <span class="course-instructor">by Abhishek Patel</span>
+              <p class="course-card-desc">
+                Become an industry-ready security specialist. Master penetration testing, network defense ciphers, and
+                threat mitigation.
+              </p>
+              <div class="course-card-action">
+                <a href="cyber-security.html" class="btn-learning-action">Start Learning</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Blockchain -->
+          <div class="course-card">
+            <div class="course-card-banner">
+              <img src="assets/course-blockchain.jpg" alt="Blockchain Course" class="course-banner-img">
+              <span class="live-status-badge">
+                <span class="live-dot"></span> Live
+              </span>
+            </div>
+            <div class="course-card-content">
+              <div class="course-card-meta">
+                <span class="course-badge badge-purple">ZERO TO ADVANCED</span>
+                <span class="course-lectures">13 Lectures</span>
+              </div>
+              <h3 class="course-card-title">Complete Blockchain Course</h3>
+              <span class="course-instructor">by Abhishek Patel</span>
+              <p class="course-card-desc">
+                Dive into Solidity and Web3. Build Ethereum smart contracts, decentralized dApps, and master security
+                audits.
+              </p>
+              <div class="course-card-action">
+                <a href="blockchain-development.html" class="btn-learning-action">Start Learning</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Meet Our Instructor Section (Step 3) -->
+    <section id="articles" class="instructor-section">
+      <div class="container instructor-grid">
+        <div class="instructor-image-side">
+          <div class="image-frame">
+            <img src="assets/instructor.jpg" alt="Abhishek Patel" class="instructor-img" />
+          </div>
+        </div>
+        <div class="instructor-info-side">
+          <span class="badge">Meet Our Instructor</span>
+          <h2 class="instructor-name">Abhishek Patel</h2>
+          <h3 class="instructor-edu">B.Tech Graduate</h3>
+          <p class="instructor-bio">
+            Hello, I'm Abhishek Patel. With a background in Bachelor of
+            Technology (B.Tech), I founded HarishTechAi to bridge the gap
+            between complex tech concepts and aspiring developers. I
+            specialize in teaching software development, focusing heavily on
+            hands-on practice, application architecture, and modern coding
+            design patterns.
+          </p>
+          <p class="instructor-bio">
+            My goal is to make learning to code accessible, engaging, and
+            highly practical, ensuring that students do not just memorize
+            syntax but learn how to build production-ready applications.
+          </p>
+          <div class="instructor-stats">
+            <div class="stat-item">
+              <h4>4+</h4>
+              <p>Premium Courses</p>
+            </div>
+            <div class="stat-item">
+              <h4>10k+</h4>
+              <p>Students Taught</p>
+            </div>
+            <div class="stat-item">
+              <h4>B.Tech</h4>
+              <p>Engineering Degree</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unlock Your Career Potential Section (Step 4) -->
+    <section class="career-section">
+      <div class="container career-grid">
+        <div class="career-content">
+          <span class="badge">Accelerate Career</span>
+          <h2 class="career-title">Unlock Your Career Potential</h2>
+          <p class="career-desc">
+            Our expert guides are designed to help you fast-track your path in
+            the software industry. By offering structured roadmaps,
+            industry-standard project templates, and code reviews, we ensure
+            you have everything needed to stand out to global recruiters.
+          </p>
+          <p class="career-desc">
+            From designing system architectures to writing unit tests, get the
+            guidance that transforms a hobbyist developer into an engineering
+            lead.
+          </p>
+          <a href="#contact" class="btn btn-primary">Get Career Guide</a>
+        </div>
+        <div class="career-image-side">
+          <div class="instructor-orbit-universe">
+            <!-- Central Core: Abhishek Patel Photo -->
+            <div class="orbit-instructor-core">
+              <div class="instructor-image-wrapper">
+                <img src="assets/instructor.jpg" alt="Abhishek Patel" class="instructor-img-circle">
+              </div>
+            </div>
+
+            <!-- Orbit Track 1: iOS (Inner) -->
+            <div class="orbit-ring ring-1">
+              <div class="ring-logo logo-swift" style="--a: 0deg;" title="SwiftUI"><i class="fa-brands fa-swift"></i>
+              </div>
+              <div class="ring-logo logo-apple" style="--a: 180deg;" title="iOS Development"><i
+                  class="fa-brands fa-apple"></i></div>
+            </div>
+
+            <!-- Orbit Track 2: Blockchain -->
+            <div class="orbit-ring ring-2">
+              <div class="ring-logo logo-bitcoin" style="--a: 60deg;" title="Bitcoin"><i
+                  class="fa-brands fa-bitcoin"></i></div>
+              <div class="ring-logo logo-ethereum" style="--a: 240deg;" title="Ethereum"><i
+                  class="fa-brands fa-ethereum"></i></div>
+            </div>
+
+            <!-- Orbit Track 3: Cyber Security -->
+            <div class="orbit-ring ring-3">
+              <div class="ring-logo logo-shield" style="--a: 120deg;" title="Threat Protection"><i
+                  class="fa-solid fa-shield-halved"></i></div>
+              <div class="ring-logo logo-lock" style="--a: 300deg;" title="Access Control"><i
+                  class="fa-solid fa-lock"></i></div>
+            </div>
+
+            <!-- Orbit Track 4: System Design (Outer) -->
+            <div class="orbit-ring ring-4">
+              <div class="ring-logo logo-database" style="--a: 30deg;" title="Database Scaling"><i
+                  class="fa-solid fa-database"></i></div>
+              <div class="ring-logo logo-server" style="--a: 150deg;" title="Backend Services"><i
+                  class="fa-solid fa-server"></i></div>
+              <div class="ring-logo logo-network" style="--a: 270deg;" title="Distributed Systems"><i
+                  class="fa-solid fa-network-wired"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HARISHTECHAI Banner Section (Step 5) -->
+    <section class="brand-banner-section">
+      <div class="brand-banner-container-fluid banner-content">
+        <div class="brand-canvas-wrapper">
+          <canvas id="brand-text-canvas"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get in Touch / Contact Section (Step 6) -->
+    <section id="contact" class="contact-section">
+      <div class="container contact-grid">
+        <div class="contact-info-side">
+          <span class="badge">Get in Touch</span>
+          <h2 class="contact-title">Let's Connect</h2>
+          <p class="contact-desc">
+            Have queries about our courses, mentorship, or career guidance?
+            Reach out, and we will get back to you as soon as possible.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <p class="label">Mobile Number</p>
+                <a href="tel:7611140772" class="value">+91 7611140772</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <p class="label">Email Address</p>
+                <a href="mailto:harishtechai@gmail.com" class="value">harishtechai@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-side">
+          <div class="form-container">
+            <form id="queryForm">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required placeholder="John Doe" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required placeholder="john@example.com" />
+              </div>
+              <div class="form-group">
+                <label for="message">Your Query / Message</label>
+                <textarea id="message" rows="5" required
+                  placeholder="Hi Abhishek, I would like to inquire about..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Send Message <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+            <div id="formFeedback" class="form-feedback"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span>Harish</span>Tech<span>Ai</span>
+        </a>
+        <p>
+          Empowering the next generation of software engineers through
+          practical building, expert guidance, and state-of-the-art coding
+          resources.
+        </p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tutorials">Tutorials</a></li>
+          <li><a href="docs.html">Docs</a></li>
+          <li><a href="hackathons.html">Hackathons</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="footer-icons">
+          <a href="https://www.linkedin.com/in/abhishek-patel-b68ab4277/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@HarishTechAi" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com/harishtechai?igsh=MWxvNGt5Ym0wa3p4ZQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1BzySK3huU/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://whatsapp.com/channel/0029VbDMzARHQbS3D6PaCd0p" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        &copy; 2026 HarishTechAi. All rights reserved. Designed by Abhishek
+        Patel.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
