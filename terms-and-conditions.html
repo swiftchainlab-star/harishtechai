@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms & Conditions | HarishTechAi</title>
+  <meta name="description"
+    content="Terms and Conditions for HarishTechAi - Online Tech Education Platform offering System Design, iOS Development, Cyber Security, and Blockchain Development courses." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/instructor.jpg" />
+
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    /* ===================================================
+       CSS Reset & Variables (Dark Theme & Yellow Accent)
+       =================================================== */
+    :root {
+      --bg-main: #0d1117;
+      --bg-card: #161b22;
+      --bg-card-hover: #1c2128;
+      --bg-glass: rgba(22, 27, 34, 0.85);
+      --border-color: #30363d;
+      --border-light: rgba(247, 201, 72, 0.25);
+      --accent-yellow: #f7c948;
+      --accent-yellow-glow: rgba(247, 201, 72, 0.15);
+      --accent-yellow-hover: #dfb234;
+      --text-main: #e6edf3;
+      --text-muted: #8b949e;
+      --text-dim: #6e7681;
+      --font-stack: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --container-width: 1100px;
+      --transition-smooth: all 0.25s ease-in-out;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      font-family: var(--font-stack);
+      line-height: 1.7;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--bg-main);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #21262d;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--accent-yellow);
+    }
+
+    a {
+      color: var(--accent-yellow);
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+
+    a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ===================================================
+       Navigation Header
+       =================================================== */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--bg-glass);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 16px 0;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 800;
+      font-size: 1.8rem;
+      color: #ffffff;
+      text-decoration: none;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo span:first-child {
+      color: var(--accent-yellow);
+    }
+
+    .logo span:last-child {
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 3px;
+      font-size: 1.4rem;
+    }
+
+    .logo:hover {
+      text-decoration: none;
+      opacity: 0.95;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-yellow);
+      text-decoration: none;
+    }
+
+    .nav-btn {
+      background-color: var(--accent-yellow);
+      color: #0d1117 !important;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 8px 18px;
+      border-radius: 6px;
+      transition: var(--transition-smooth);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-btn:hover {
+      background-color: #ffffff;
+      color: #0d1117 !important;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 15px rgba(247, 201, 72, 0.3);
+      text-decoration: none;
+    }
+
+    /* ===================================================
+       Hero Banner
+       =================================================== */
+    .page-hero {
+      padding: 60px 0 40px;
+      border-bottom: 1px solid var(--border-color);
+      background: radial-gradient(circle at 50% 0%, rgba(247, 201, 72, 0.08) 0%, transparent 65%);
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: var(--accent-yellow-glow);
+      border: 1px solid var(--border-light);
+      border-radius: 50px;
+      color: var(--accent-yellow);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .page-hero h1 {
+      font-size: 2.75rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 14px;
+      color: #ffffff;
+      letter-spacing: -0.8px;
+    }
+
+    .page-hero h1 span {
+      color: var(--accent-yellow);
+    }
+
+    .page-hero p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 650px;
+      margin: 0 auto 20px;
+    }
+
+    .meta-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      color: var(--text-dim);
+      font-size: 0.9rem;
+    }
+
+    .meta-info span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .meta-info span i {
+      color: var(--accent-yellow);
+    }
+
+    /* ===================================================
+       Main Layout (TOC + Content)
+       =================================================== */
+    .content-wrapper {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 40px;
+      padding: 50px 0 80px;
+      align-items: start;
+    }
+
+    /* Sticky Sidebar / Table of Contents */
+    .sidebar {
+      position: sticky;
+      top: 100px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+    }
+
+    .sidebar h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 12px;
+    }
+
+    .sidebar h3 i {
+      color: var(--accent-yellow);
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: calc(100vh - 220px);
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    .toc-list::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .toc-list a {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      font-weight: 500;
+      display: block;
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: var(--transition-smooth);
+      text-decoration: none;
+    }
+
+    .toc-list a:hover {
+      background: var(--accent-yellow-glow);
+      color: var(--accent-yellow);
+      transform: translateX(3px);
+    }
+
+    /* Terms Body */
+    .terms-content {
+      background: transparent;
+    }
+
+    .notice-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-left: 4px solid var(--accent-yellow);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 35px;
+    }
+
+    .notice-box h4 {
+      color: var(--accent-yellow);
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .notice-box p {
+      color: var(--text-main);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .section-block {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 28px;
+      transition: var(--transition-smooth);
+    }
+
+    .section-block:hover {
+      border-color: rgba(247, 201, 72, 0.4);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 14px;
+    }
+
+    .section-number {
+      width: 38px;
+      height: 38px;
+      background: var(--accent-yellow-glow);
+      border: 1px solid var(--border-light);
+      color: var(--accent-yellow);
+      font-weight: 800;
+      font-size: 1rem;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .section-header h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.3px;
+    }
+
+    .section-body p {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      margin-bottom: 14px;
+      line-height: 1.7;
+    }
+
+    .section-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-body strong {
+      color: var(--text-main);
+    }
+
+    .section-body ul {
+      list-style: none;
+      margin: 14px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .section-body ul li {
+      position: relative;
+      padding-left: 26px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .section-body ul li::before {
+      content: "•";
+      position: absolute;
+      left: 8px;
+      color: var(--accent-yellow);
+      font-size: 1.3rem;
+      line-height: 1;
+      top: -2px;
+    }
+
+    .highlight-card {
+      background: rgba(247, 201, 72, 0.05);
+      border: 1px dashed rgba(247, 201, 72, 0.35);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+
+    .highlight-card h4 {
+      color: var(--accent-yellow);
+      font-size: 0.98rem;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .highlight-card p {
+      color: var(--text-main);
+      font-size: 0.92rem;
+      margin: 0;
+    }
+
+    /* Course Badges Grid */
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin: 18px 0;
+    }
+
+    .course-item {
+      background: #0d1117;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .course-item i {
+      color: var(--accent-yellow);
+      font-size: 1.25rem;
+    }
+
+    .course-item span {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    /* Do's and Don'ts Grid */
+    .rules-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 18px 0;
+    }
+
+    .rule-card {
+      background: #0d1117;
+      border-radius: 8px;
+      padding: 18px;
+      border: 1px solid var(--border-color);
+    }
+
+    .rule-card.dos {
+      border-top: 3px solid #3fb950;
+    }
+
+    .rule-card.donts {
+      border-top: 3px solid #f85149;
+    }
+
+    .rule-card h4 {
+      font-size: 1rem;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .rule-card.dos h4 {
+      color: #3fb950;
+    }
+
+    .rule-card.donts h4 {
+      color: #f85149;
+    }
+
+    .rule-card ul li::before {
+      display: none;
+    }
+
+    .rule-card ul li {
+      padding-left: 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+
+    /* Contact Details Box */
+    .contact-card {
+      background: #0d1117;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 22px;
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .contact-info-item .icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: var(--accent-yellow-glow);
+      color: var(--accent-yellow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+
+    .contact-info-item .label {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 3px;
+    }
+
+    .contact-info-item .val {
+      font-size: 0.95rem;
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    /* ===================================================
+       Footer
+       =================================================== */
+    .footer {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-color);
+      padding: 60px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand .logo {
+      margin-bottom: 14px;
+    }
+
+    .footer-brand p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      max-width: 320px;
+      margin-bottom: 18px;
+    }
+
+    .footer-column h4 {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      position: relative;
+    }
+
+    .footer-column h4::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 28px;
+      height: 2px;
+      background: var(--accent-yellow);
+    }
+
+    .footer-column ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-column ul a {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+
+    .footer-column ul a:hover {
+      color: var(--accent-yellow);
+      padding-left: 4px;
+    }
+
+    .footer-social-links {
+      display: flex;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .footer-social-links a {
+      width: 36px;
+      height: 36px;
+      background: var(--bg-main);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 1rem;
+      transition: var(--transition-smooth);
+    }
+
+    .footer-social-links a:hover {
+      background: var(--accent-yellow);
+      color: #0d1117;
+      border-color: var(--accent-yellow);
+      transform: translateY(-3px);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-color);
+      padding-top: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+      color: var(--text-dim);
+      font-size: 0.88rem;
+    }
+
+    .footer-badges {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 0.85rem;
+    }
+
+    .badge-ccavenue {
+      background: #0d1117;
+      border: 1px solid var(--border-color);
+      padding: 4px 10px;
+      border-radius: 6px;
+      color: var(--accent-yellow);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+    }
+
+    /* ===================================================
+       Responsive Breakpoints
+       =================================================== */
+    @media (max-width: 992px) {
+      .content-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        display: none;
+        /* Hide TOC on medium screens for simplicity */
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .page-hero h1 {
+        font-size: 2rem;
+      }
+
+      .rules-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-block {
+        padding: 20px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header / Navigation Bar -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <span>Harish</span>Tech<span>Ai</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#learning">Courses</a></li>
+        <li><a href="docs.html">Docs</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="refund-policy.html">Refund Policy</a></li>
+      </ul>
+      <a href="index.html" class="nav-btn">
+        <i class="fa-solid fa-arrow-left"></i> Back to Website
+      </a>
+    </div>
+  </header>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge">
+        <i class="fa-solid fa-shield-halved"></i> Legal &amp; Compliance Document
+      </span>
+      <h1>Terms &amp; <span>Conditions</span></h1>
+      <p>
+        Please review these terms and conditions carefully before using our platform, accessing our learning resources,
+        or purchasing educational programs.
+      </p>
+      <div class="meta-info">
+        <span><i class="fa-regular fa-calendar-check"></i> Last Updated: September 18, 2026</span>
+        <span><i class="fa-solid fa-location-dot"></i> Jurisdiction: Madhya Pradesh, India</span>
+        <span><i class="fa-solid fa-credit-card"></i> Payment Processing: CCAvenue (INR)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Layout -->
+  <main class="container">
+    <div class="content-wrapper">
+
+      <!-- Sticky Table of Contents (Sidebar) -->
+      <aside class="sidebar">
+        <h3><i class="fa-solid fa-list-ol"></i> Table of Contents</h3>
+        <ul class="toc-list">
+          <li><a href="#acceptance">1. Acceptance of Terms</a></li>
+          <li><a href="#about">2. About HarishTechAi</a></li>
+          <li><a href="#usage">3. Use of Website (Do's &amp; Don'ts)</a></li>
+          <li><a href="#ipr">4. Intellectual Property Rights</a></li>
+          <li><a href="#enrollment">5. Course Access &amp; Enrollment</a></li>
+          <li><a href="#payments">6. Payment Terms &amp; Gateway</a></li>
+          <li><a href="#refund-policy">7. Refund &amp; Cancellation</a></li>
+          <li><a href="#disclaimer">8. Disclaimer of Warranties</a></li>
+          <li><a href="#liability">9. Limitation of Liability</a></li>
+          <li><a href="#third-party">10. Third-Party Links</a></li>
+          <li><a href="#termination">11. Account Termination</a></li>
+          <li><a href="#governing-law">12. Governing Law &amp; Jurisdiction</a></li>
+          <li><a href="#modifications">13. Changes to Terms</a></li>
+          <li><a href="#contact-us">14. Contact &amp; Grievances</a></li>
+        </ul>
+      </aside>
+
+      <!-- Terms Details Content -->
+      <article class="terms-content">
+
+        <!-- Crucial Notice Box for CCAvenue and Students -->
+        <div class="notice-box">
+          <h4><i class="fa-solid fa-circle-info"></i> Important Merchant Notice</h4>
+          <p>
+            This website <strong>harishtechai.com</strong> is owned and operated by <strong>Abhishek Patel</strong>,
+            based in Madhya Pradesh, India. By accessing our educational services or completing a payment through our
+            authorized payment partner <strong>CCAvenue</strong>, you unconditionally enter into a legally binding
+            agreement in accordance with the Information Technology Act, 2000 and applicable consumer and commercial
+            laws of India.
+          </p>
+        </div>
+
+        <!-- Section 1: Acceptance of Terms -->
+        <section id="acceptance" class="section-block">
+          <div class="section-header">
+            <span class="section-number">01</span>
+            <h2>Acceptance of Terms</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              Welcome to <strong>HarishTechAi</strong> ("we", "us", "our", or "Platform"). These Terms and Conditions
+              govern your access to and use of our website located at <a href="https://harishtechai.com"
+                target="_blank">harishtechai.com</a>, including any subdomains, associated mobile interfaces, multimedia
+              content, software code, and online educational materials.
+            </p>
+            <p>
+              By accessing, browsing, registering an account, or purchasing any educational course on this platform, you
+              acknowledge that you have read, understood, and agreed to be bound by these Terms and Conditions, along
+              with our <a href="privacy-policy.html">Privacy Policy</a> and <a href="refund-policy.html">Refund
+                Policy</a>.
+            </p>
+            <p>
+              If you do not agree to these terms in their entirety, you must immediately discontinue your use of our
+              website and services.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 2: About HarishTechAi -->
+        <section id="about" class="section-block">
+          <div class="section-header">
+            <span class="section-number">02</span>
+            <h2>About HarishTechAi &amp; Educational Services</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              <strong>HarishTechAi</strong> is a premier tech education platform founded and managed by <strong>Abhishek
+                Patel</strong>, operating from Madhya Pradesh, India. Our core objective is empowering developers,
+              computer science students, and working tech professionals with industry-grade, hands-on software
+              engineering skills.
+            </p>
+            <p>We provide specialized curriculum, code walkthroughs, and practical roadmaps across four principal
+              learning tracks:</p>
+
+            <div class="course-grid">
+              <div class="course-item">
+                <i class="fa-solid fa-sitemap"></i>
+                <span>System Design (HLD &amp; LLD)</span>
+              </div>
+              <div class="course-item">
+                <i class="fa-brands fa-apple"></i>
+                <span>iOS Dev (Swift &amp; SwiftUI)</span>
+              </div>
+              <div class="course-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Cyber Security</span>
+              </div>
+              <div class="course-item">
+                <i class="fa-solid fa-cubes"></i>
+                <span>Blockchain Development</span>
+              </div>
+            </div>
+
+            <p>
+              All educational services provided are purely for technical skill enhancement, interview readiness, and
+              knowledge building. Enrollment in any track does not constitute a legal guarantee of employment or
+              academic degree accreditation.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 3: Use of Website (Do's & Don'ts) -->
+        <section id="usage" class="section-block">
+          <div class="section-header">
+            <span class="section-number">03</span>
+            <h2>Use of Website (Do's and Don'ts)</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              You agree to use <strong>harishtechai.com</strong> exclusively for lawful educational purposes and in
+              complete harmony with all local, state, national, and international laws and regulations.
+            </p>
+
+            <div class="rules-grid">
+              <div class="rule-card dos">
+                <h4><i class="fa-solid fa-circle-check"></i> What You Should Do (Do's)</h4>
+                <ul>
+                  <li><i class="fa-solid fa-check" style="color: #3fb950;"></i> Provide accurate, current, and genuine
+                    details when contacting or registering.</li>
+                  <li><i class="fa-solid fa-check" style="color: #3fb950;"></i> Use code samples, architecture designs,
+                    and projects for personal practice and portfolio building.</li>
+                  <li><i class="fa-solid fa-check" style="color: #3fb950;"></i> Maintain the confidentiality of your
+                    login credentials and purchase receipts.</li>
+                  <li><i class="fa-solid fa-check" style="color: #3fb950;"></i> Respect community standards when
+                    interacting with mentors and peers.</li>
+                </ul>
+              </div>
+              <div class="rule-card donts">
+                <h4><i class="fa-solid fa-circle-xmark"></i> Prohibited Activities (Don'ts)</h4>
+                <ul>
+                  <li><i class="fa-solid fa-xmark" style="color: #f85149;"></i> Do not copy, pirate, record, rip, or
+                    redistribute video lectures and premium materials.</li>
+                  <li><i class="fa-solid fa-xmark" style="color: #f85149;"></i> Do not share your paid course
+                    credentials with third parties or torrenting networks.</li>
+                  <li><i class="fa-solid fa-xmark" style="color: #f85149;"></i> Do not use automated scrapers, bots,
+                    spiders, or DDoS mechanisms against our servers.</li>
+                  <li><i class="fa-solid fa-xmark" style="color: #f85149;"></i> Do not conduct unauthorized penetration
+                    testing or vulnerability exploitation on our domains.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 4: Intellectual Property Rights -->
+        <section id="ipr" class="section-block">
+          <div class="section-header">
+            <span class="section-number">04</span>
+            <h2>Intellectual Property Rights</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              All intellectual property on <strong>harishtechai.com</strong>—including without limitation all video
+              lectures, course outlines, visual system design diagrams, source code implementations, quizzes, written
+              documentation, graphics, branding, logos, trademarks, and website UI design—is the exclusive proprietary
+              asset of <strong>HarishTechAi</strong> and <strong>Abhishek Patel</strong>, protected under Indian
+              Copyright and Trademark legislation and international copyright conventions.
+            </p>
+            <div class="highlight-card">
+              <h4><i class="fa-solid fa-lock"></i> Limited Personal License</h4>
+              <p>
+                Upon valid enrollment, you are granted a limited, non-exclusive, non-transferable, revocable license to
+                access and view course content solely for your personal, non-commercial self-study. Any commercial
+                resale, re-broadcasting, public exhibition, or unauthorized uploading to Telegram, Google Drive, Mega,
+                YouTube, or torrent platforms is strictly unlawful and will attract immediate legal action and statutory
+                damages under the Indian Copyright Act, 1957.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 5: Course Access & Enrollment Rules -->
+        <section id="enrollment" class="section-block">
+          <div class="section-header">
+            <span class="section-number">05</span>
+            <h2>Course Access &amp; Enrollment Rules</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              To enroll in paid or certified programs, learners must be at least 18 years of age or possess legal
+              parental/guardian consent under applicable Indian laws.
+            </p>
+            <ul>
+              <li><strong>Instant Digital Access:</strong> Upon successful transaction verification via our payment
+                gateway, access credentials or digital learning links are delivered electronically via email or unlocked
+                on your user dashboard instantly or within a maximum turnaround of 24 hours.</li>
+              <li><strong>Single-User License:</strong> Each enrollment represents a single individual seat. Multiple
+                simultaneous sessions from geographically disparate IP addresses may trigger automated security locks.
+              </li>
+              <li><strong>Curriculum Updates:</strong> We reserve the right to revise, update, deprecate, or enhance
+                curriculum modules, frameworks, code versions (e.g., Swift versions, cloud architectures), or tools to
+                keep pace with evolving industry paradigms.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 6: Payment Terms & Gateway (CCAvenue Approval Friendly) -->
+        <section id="payments" class="section-block">
+          <div class="section-header">
+            <span class="section-number">06</span>
+            <h2>Pricing, Payment Terms &amp; Payment Gateway (CCAvenue)</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              All course fees, bundle packages, and mentorship subscriptions on <strong>HarishTechAi</strong> are
+              governed by transparent commercial terms:
+            </p>
+            <ul>
+              <li><strong>Currency:</strong> All fees are stated, quoted, and collected in <strong>Indian Rupees (INR /
+                  ₹)</strong>, unless explicitly noted otherwise on checkout.</li>
+              <li><strong>Authorized Payment Gateway:</strong> We partner with <strong>CCAvenue</strong> (Avenues India
+                Pvt. Ltd.) as our primary, PCI-DSS Level 1 certified payment processing gateway to facilitate secure,
+                encrypted electronic transactions.</li>
+              <li><strong>Supported Payment Modes:</strong> Through CCAvenue, we accept major Indian and international
+                credit cards (Visa, MasterCard, RuPay, Diners), Debit Cards, Net Banking across 50+ Indian banks, UPI
+                (Google Pay, PhonePe, Paytm, BHIM), and authorized digital wallets.</li>
+              <li><strong>Taxes &amp; Invoicing:</strong> Prices are inclusive or exclusive of applicable taxes (such as
+                GST) as specified during checkout. Digital receipts and tax invoices are automatically transmitted to
+                your registered email address upon payment confirmation.</li>
+              <li><strong>No Card Data Storage:</strong> HarishTechAi does not store, capture, or access your sensitive
+                credit/debit card numbers, CVVs, or Net Banking credentials on our servers. All sensitive financial
+                transactions occur through 256-bit encrypted sessions hosted securely by CCAvenue and your issuing bank.
+              </li>
+              <li><strong>Failed Transactions:</strong> In the event that your bank account or card is debited but the
+                platform reflects an unconfirmed status due to network latency or timeout, the debited sum is generally
+                reconciled and either confirmed within 24–48 hours or auto-reversed to your original payment method by
+                your issuing bank/CCAvenue within standard banking cycle turnaround times (typically 5 to 7 business
+                days).</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 7: Refund Policy Reference -->
+        <section id="refund-policy" class="section-block">
+          <div class="section-header">
+            <span class="section-number">07</span>
+            <h2>Refund &amp; Cancellation Policy Reference</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              We stand behind the superior quality of our educational content. Our detailed policies on refunds,
+              returns, cancellations, and timelines are fully documented in our separate <a
+                href="refund-policy.html">Refund Policy</a>.
+            </p>
+            <div class="highlight-card">
+              <h4><i class="fa-solid fa-arrows-rotate"></i> Policy Summary</h4>
+              <p>
+                For applicable eligible paid programs, refund requests submitted within our stipulated 7-day review
+                window from the date of enrollment will be verified. In approved refund scenarios, the amount is
+                refunded exclusively through the original <strong>CCAvenue</strong> payment channel back to the original
+                source account within 5 to 7 working days. Non-refundable scenarios include courses where substantial
+                digital content has already been accessed or downloaded. Please review our complete <a
+                  href="refund-policy.html">Refund Policy</a> for full procedural guidelines.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 8: Disclaimer of Warranties -->
+        <section id="disclaimer" class="section-block">
+          <div class="section-header">
+            <span class="section-number">08</span>
+            <h2>Disclaimer of Warranties</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              The services, tutorials, guides, and courses on <strong>HarishTechAi</strong> are provided on an
+              <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis without warranties of any kind, whether
+              express, implied, statutory, or otherwise.
+            </p>
+            <ul>
+              <li>We make no warranty that the website or course materials will meet your individual expectations, be
+                uninterrupted, timely, secure, or free from server glitches, bugs, or omissions.</li>
+              <li><strong>Educational Purpose Only:</strong> Coding examples, architectural paradigms, cyber security
+                demonstration environments, and smart contracts are intended strictly for instructional use in safe,
+                authorized sandbox environments. We disclaim any liability for outcomes resulting from the unauthorized
+                application of these techniques outside controlled learning boundaries.</li>
+              <li><strong>Employment Disclaimer:</strong> While our training is designed to significantly boost software
+                engineering competence and competitive interview performance, HarishTechAi does not promise, warrant, or
+                guarantee specific job placements, salary packages, or corporate promotions.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 9: Limitation of Liability -->
+        <section id="liability" class="section-block">
+          <div class="section-header">
+            <span class="section-number">09</span>
+            <h2>Limitation of Liability</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              To the maximum extent permissible under applicable law, in no event shall <strong>HarishTechAi</strong>,
+              its founder <strong>Abhishek Patel</strong>, instructors, affiliates, payment partners (including
+              CCAvenue), or suppliers be liable for any indirect, punitive, incidental, special, consequential, or
+              exemplary damages, including without limitation damages for loss of profits, goodwill, data, hardware
+              malfunction, or other intangible losses arising out of or in connection with the use or inability to use
+              our platform or courses.
+            </p>
+            <p>
+              Under any circumstances, the total aggregate liability of HarishTechAi towards you for all claims arising
+              out of these Terms or your use of the website shall not exceed the total amount actually paid by you to
+              HarishTechAi for the specific course giving rise to the dispute during the three (3) months preceding the
+              claim.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 10: Third Party Links -->
+        <section id="third-party" class="section-block">
+          <div class="section-header">
+            <span class="section-number">10</span>
+            <h2>Third-Party Links &amp; External Services</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              Our website may contain hyperlinks to external third-party websites, developer tools, GitHub repositories,
+              cloud platforms (AWS, GCP, Azure), YouTube channels, or external documentation that are not owned or
+              operated by HarishTechAi.
+            </p>
+            <p>
+              We exercise no control over the content, privacy policies, practices, or security of any third-party
+              websites. Inclusion of any link does not imply endorsement by HarishTechAi. You acknowledge and agree that
+              we are not responsible or liable for any damage or loss caused or alleged to be caused by or in connection
+              with your reliance on any external content, products, or services.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 11: Termination & Account Suspension -->
+        <section id="termination" class="section-block">
+          <div class="section-header">
+            <span class="section-number">11</span>
+            <h2>Account Termination &amp; Suspension</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              We reserve the absolute right, without prior notice and at our sole discretion, to terminate or suspend
+              your account, restrict your portal access, or revoke course enrollment if:
+            </p>
+            <ul>
+              <li>You breach or violate any provision of these Terms &amp; Conditions or community guidelines.</li>
+              <li>You engage in fraudulent, abusive, or illegal conduct (including payment chargeback fraud or content
+                scraping).</li>
+              <li>You attempt to reverse engineer, decompile, or tamper with our web architecture or digital rights
+                management mechanisms.</li>
+            </ul>
+            <p>
+              Upon termination, all rights and licenses granted to you shall cease immediately, without liability for
+              refund or compensation where termination resulted from your violation.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 12: Governing Law & Jurisdiction -->
+        <section id="governing-law" class="section-block">
+          <div class="section-header">
+            <span class="section-number">12</span>
+            <h2>Governing Law &amp; Dispute Resolution (Madhya Pradesh, India)</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              These Terms and Conditions, your relationship with HarishTechAi, and any dispute or claim arising out of
+              or related to our website or payment transactions shall be governed by, construed, and enforced
+              exclusively in accordance with the substantive laws of <strong>India</strong>, without regard to its
+              conflict of law principles.
+            </p>
+            <div class="highlight-card">
+              <h4><i class="fa-solid fa-gavel"></i> Exclusive Jurisdiction</h4>
+              <p>
+                You unequivocally agree that any dispute, claim, controversy, or legal proceeding arising out of or in
+                connection with these Terms, payment settlements, or services shall be submitted to the exclusive
+                jurisdiction of the competent civil courts located in <strong>Madhya Pradesh, India</strong>.
+              </p>
+            </div>
+            <p>
+              Before instituting formal legal proceedings, parties agree to undertake reasonable good-faith negotiations
+              to amicably settle disputes by notifying our grievance officer via <a
+                href="mailto:info@harishtechai.com">info@harishtechai.com</a>.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 13: Changes to Terms -->
+        <section id="modifications" class="section-block">
+          <div class="section-header">
+            <span class="section-number">13</span>
+            <h2>Changes &amp; Amendments to Terms</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              We reserve the right, at our sole discretion, to modify, update, or replace any part of these Terms and
+              Conditions at any time to reflect updates in our course offerings, statutory regulations, or payment
+              partner policies.
+            </p>
+            <p>
+              Whenever material changes are made, we will update the "Last Updated" date displayed at the top of this
+              document. It is your responsibility to review this page periodically for updates. Your continued use of or
+              access to our website following the posting of any revisions constitutes full acceptance of those revised
+              terms.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 14: Contact & Grievance Redressal -->
+        <section id="contact-us" class="section-block">
+          <div class="section-header">
+            <span class="section-number">14</span>
+            <h2>Contact Information &amp; Grievance Officer</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              If you have any questions, clarifications, feedback, or grievance regarding these Terms and Conditions, or
+              need assistance with your CCAvenue transaction, please contact our support desk:
+            </p>
+
+            <div class="contact-card">
+              <div class="contact-info-item">
+                <div class="icon"><i class="fa-solid fa-user-shield"></i></div>
+                <div>
+                  <div class="label">Proprietor / Founder</div>
+                  <div class="val">Abhishek Patel</div>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <div class="label">Official Email</div>
+                  <div class="val"><a href="mailto:harishtechai@gmail.com">harishtechai@gmail.com</a></div>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <div class="label">Telephone Support</div>
+                  <div class="val"><a href="tel:+917611140772">+91 7611140772</a></div>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <div class="label">Operating Location</div>
+                  <div class="val">Madhya Pradesh, India</div>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="icon"><i class="fa-solid fa-globe"></i></div>
+                <div>
+                  <div class="label">Official Website</div>
+                  <div class="val"><a href="https://harishtechai.com" target="_blank">harishtechai.com</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Brand column -->
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span>Harish</span>Tech<span>Ai</span>
+        </a>
+        <p>
+          Empowering future software engineers with deep mastery in System Design, iOS Engineering, Cyber Security, and
+          Blockchain Development.
+        </p>
+        <div class="footer-social-links">
+          <a href="https://www.linkedin.com/in/abhishek-patel-b68ab4277/" target="_blank" title="LinkedIn"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@HarishTechAi" target="_blank" title="YouTube"><i
+              class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com/harishtechai?igsh=MWxvNGt5Ym0wa3p4ZQ==" target="_blank"
+            title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1BzySK3huU/" target="_blank" title="Facebook"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://whatsapp.com/channel/0029VbDMzARHQbS3D6PaCd0p" target="_blank" title="WhatsApp"><i
+              class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#learning">Courses</a></li>
+          <li><a href="docs.html">Documentation</a></li>
+          <li><a href="coding-practice.html">Coding Practice</a></li>
+          <li><a href="hackathons.html">Hackathons</a></li>
+        </ul>
+      </div>
+
+      <!-- Courses Offered -->
+      <div class="footer-column">
+        <h4>Learning Tracks</h4>
+        <ul>
+          <li><a href="system-design.html">System Design (HLD &amp; LLD)</a></li>
+          <li><a href="ios-development.html">iOS Development</a></li>
+          <li><a href="cyber-security.html">Cyber Security</a></li>
+          <li><a href="blockchain-development.html">Blockchain Development</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal Policies (CCAvenue Requirement) -->
+      <div class="footer-column">
+        <h4>Legal &amp; Policy</h4>
+        <ul>
+          <li><a href="terms-and-conditions.html" style="color: var(--accent-yellow); font-weight: 600;">Terms &amp;
+              Conditions</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="refund-policy.html">Refund &amp; Cancellation</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar with CCAvenue Badge -->
+    <div class="container footer-bottom">
+      <p>
+        &copy; 2026 <strong>HarishTechAi</strong>. All Rights Reserved. Founded by <strong>Abhishek Patel</strong>.
+      </p>
+      <div class="footer-badges">
+        <span class="badge-ccavenue">
+          <i class="fa-solid fa-lock"></i> Secured by CCAvenue (INR)
+        </span>
+        <span>Madhya Pradesh, India</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | HarishTechAi</title>
+  <meta name="description"
+    content="Privacy Policy for HarishTechAi - Understand how we collect, safeguard, and process your personal and transactional information across our tech education platform." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/instructor.jpg" />
+
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    /* ===================================================
+       CSS Reset & Variables (Dark Theme & Yellow Accent)
+       =================================================== */
+    :root {
+      --bg-main: #0d1117;
+      --bg-card: #161b22;
+      --bg-card-hover: #1c2128;
+      --bg-glass: rgba(22, 27, 34, 0.85);
+      --border-color: #30363d;
+      --border-light: rgba(247, 201, 72, 0.25);
+      --accent-yellow: #f7c948;
+      --accent-yellow-glow: rgba(247, 201, 72, 0.15);
+      --accent-yellow-hover: #dfb234;
+      --text-main: #e6edf3;
+      --text-muted: #8b949e;
+      --text-dim: #6e7681;
+      --font-stack: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --container-width: 1100px;
+      --transition-smooth: all 0.25s ease-in-out;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      font-family: var(--font-stack);
+      line-height: 1.7;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: var(--accent-yellow);
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===================================================
+       Header & Navigation Bar
+       =================================================== */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-glass);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      transition: var(--transition-smooth);
+    }
+
+    .navbar {
+      display: flex;
+      height: 74px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 800;
+      font-size: 1.8rem;
+      color: #ffffff;
+      text-decoration: none;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo span:first-child {
+      color: var(--accent-yellow);
+    }
+
+    .logo span:last-child {
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 3px;
+      font-size: 1.4rem;
+    }
+
+    .logo:hover {
+      text-decoration: none;
+      opacity: 0.95;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-yellow);
+      text-decoration: none;
+    }
+
+    .nav-btn {
+      background-color: var(--accent-yellow);
+      color: #0d1117 !important;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 8px 18px;
+      border-radius: 6px;
+      transition: var(--transition-smooth);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-btn:hover {
+      background-color: #ffffff;
+      color: #0d1117 !important;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 15px rgba(247, 201, 72, 0.3);
+      text-decoration: none;
+    }
+
+    /* ===================================================
+       Hero Banner
+       =================================================== */
+    .page-hero {
+      padding: 60px 0 40px;
+      border-bottom: 1px solid var(--border-color);
+      background: radial-gradient(circle at 50% 0%, rgba(247, 201, 72, 0.08) 0%, transparent 65%);
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: var(--accent-yellow-glow);
+      border: 1px solid var(--border-light);
+      border-radius: 50px;
+      color: var(--accent-yellow);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .page-hero h1 {
+      font-size: 2.75rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 14px;
+      color: #ffffff;
+      letter-spacing: -0.8px;
+    }
+
+    .page-hero h1 span {
+      color: var(--accent-yellow);
+    }
+
+    .page-hero p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 680px;
+      margin: 0 auto 20px;
+    }
+
+    .meta-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      color: var(--text-dim);
+      font-size: 0.9rem;
+    }
+
+    .meta-info span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .meta-info span i {
+      color: var(--accent-yellow);
+    }
+
+    /* ===================================================
+       Main Layout (TOC + Content)
+       =================================================== */
+    .content-wrapper {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 40px;
+      padding: 50px 0 80px;
+      align-items: start;
+    }
+
+    /* Sticky Sidebar / Table of Contents */
+    .sidebar {
+      position: sticky;
+      top: 100px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+    }
+
+    .sidebar h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 12px;
+    }
+
+    .sidebar h3 i {
+      color: var(--accent-yellow);
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: calc(100vh - 220px);
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    .toc-list::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .toc-list::-webkit-scrollbar-thumb {
+      background: var(--border-color);
+      border-radius: 4px;
+    }
+
+    .toc-list a {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      font-weight: 500;
+      display: block;
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: var(--transition-smooth);
+      text-decoration: none;
+    }
+
+    .toc-list a:hover {
+      background: var(--accent-yellow-glow);
+      color: var(--accent-yellow);
+      transform: translateX(3px);
+    }
+
+    /* Policy Body */
+    .terms-content {
+      background: transparent;
+    }
+
+    .notice-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-left: 4px solid var(--accent-yellow);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 35px;
+    }
+
+    .notice-box h4 {
+      color: var(--accent-yellow);
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .notice-box p {
+      color: var(--text-main);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .section-block {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 28px;
+      transition: var(--transition-smooth);
+    }
+
+    .section-block:hover {
+      border-color: rgba(247, 201, 72, 0.4);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 14px;
+    }
+
+    .section-number {
+      width: 38px;
+      height: 38px;
+      background: var(--accent-yellow-glow);
+      border: 1px solid var(--border-light);
+      color: var(--accent-yellow);
+      font-weight: 800;
+      font-size: 1rem;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .section-header h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.3px;
+    }
+
+    .section-body p {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      margin-bottom: 14px;
+      line-height: 1.7;
+    }
+
+    .section-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-body strong {
+      color: var(--text-main);
+    }
+
+    .section-body ul {
+      list-style: none;
+      margin: 14px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .section-body ul li {
+      position: relative;
+      padding-left: 26px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .section-body ul li::before {
+      content: "•";
+      position: absolute;
+      left: 8px;
+      color: var(--accent-yellow);
+      font-size: 1.3rem;
+      line-height: 1;
+      top: -2px;
+    }
+
+    .highlight-card {
+      background: rgba(247, 201, 72, 0.05);
+      border: 1px dashed rgba(247, 201, 72, 0.35);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+
+    .highlight-card h4 {
+      color: var(--accent-yellow);
+      font-size: 0.98rem;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .highlight-card p {
+      color: var(--text-main);
+      font-size: 0.92rem;
+      margin: 0;
+    }
+
+    /* Contact Details Box */
+    .contact-card {
+      background: #0d1117;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 22px;
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .contact-info-item .icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: var(--accent-yellow-glow);
+      color: var(--accent-yellow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+
+    .contact-info-item .label {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 3px;
+    }
+
+    .contact-info-item .val {
+      font-size: 0.95rem;
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    /* ===================================================
+       Footer
+       =================================================== */
+    .footer {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-color);
+      padding: 60px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand .logo {
+      margin-bottom: 14px;
+    }
+
+    .footer-brand p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      max-width: 320px;
+      margin-bottom: 18px;
+    }
+
+    .footer-column h4 {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      letter-spacing: -0.2px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-column ul a {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    .footer-column ul a:hover {
+      color: var(--accent-yellow);
+    }
+
+    .footer-social-links {
+      display: flex;
+      gap: 12px;
+    }
+
+    .footer-social-links a {
+      width: 36px;
+      height: 36px;
+      background: #0d1117;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      transition: var(--transition-smooth);
+      text-decoration: none;
+    }
+
+    .footer-social-links a:hover {
+      background: var(--accent-yellow);
+      color: #0d1117;
+      border-color: var(--accent-yellow);
+      transform: translateY(-2px);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-color);
+      padding-top: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-size: 0.88rem;
+      color: var(--text-dim);
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .content-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+        margin-bottom: 30px;
+      }
+
+      .toc-list {
+        max-height: 260px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .page-hero h1 {
+        font-size: 2.1rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-block {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header / Navigation Bar -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <span>Harish</span>Tech<span>Ai</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#learning">Courses</a></li>
+        <li><a href="docs.html">Docs</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="privacy-policy.html" style="color: var(--accent-yellow); font-weight: 600;">Privacy Policy</a></li>
+        <li><a href="refund-policy.html">Refund Policy</a></li>
+      </ul>
+      <a href="index.html" class="nav-btn">
+        <i class="fa-solid fa-arrow-left"></i> Back to Website
+      </a>
+    </div>
+  </header>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge">
+        <i class="fa-solid fa-shield-halved"></i> Data Security &amp; Compliance
+      </span>
+      <h1>Privacy <span>Policy</span></h1>
+      <p>
+        Your privacy is paramount. Learn how HarishTechAi collects, processes, and protects your personal data and
+        learning records under Indian and international digital data protection standards.
+      </p>
+      <div class="meta-info">
+        <span><i class="fa-solid fa-calendar-check"></i> Last Updated: September 18, 2026</span>
+        <span><i class="fa-solid fa-file-contract"></i> Version 2.4</span>
+        <span><i class="fa-solid fa-building-shield"></i> Operated by Abhishek Patel</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="container">
+    <div class="content-wrapper">
+
+      <!-- Sticky Table of Contents Sidebar -->
+      <aside class="sidebar">
+        <h3><i class="fa-solid fa-list-ul"></i> Quick Navigation</h3>
+        <ul class="toc-list">
+          <li><a href="#intro">1. Overview &amp; Data Controller</a></li>
+          <li><a href="#information-we-collect">2. Information We Collect</a></li>
+          <li><a href="#how-we-collect">3. How We Collect Data</a></li>
+          <li><a href="#use-of-data">4. Purpose of Processing</a></li>
+          <li><a href="#payment-security">5. Payment Security &amp; CCAvenue</a></li>
+          <li><a href="#cookies">6. Cookies &amp; Tracking</a></li>
+          <li><a href="#data-sharing">7. Data Sharing &amp; Disclosure</a></li>
+          <li><a href="#data-retention">8. Retention &amp; Storage</a></li>
+          <li><a href="#user-rights">9. Your Privacy Rights</a></li>
+          <li><a href="#children">10. Minor / Children Privacy</a></li>
+          <li><a href="#policy-updates">11. Updates to this Policy</a></li>
+          <li><a href="#contact-us">12. Grievance Redressal &amp; Contact</a></li>
+        </ul>
+      </aside>
+
+      <!-- Terms / Privacy Content Body -->
+      <div class="terms-content">
+
+        <!-- Mandatory Notice Box -->
+        <div class="notice-box">
+          <h4><i class="fa-solid fa-circle-info"></i> Commitment to Data Privacy</h4>
+          <p>
+            HarishTechAi respects your fundamental right to privacy. We do not sell, rent, or trade your personal
+            contact or behavioral data to third-party advertising brokers. All payments are processed through bank-grade
+            encrypted gateways including CCAvenue with strict tokenization.
+          </p>
+        </div>
+
+        <!-- Section 1: Overview & Data Controller -->
+        <section id="intro" class="section-block">
+          <div class="section-header">
+            <div class="section-number">01</div>
+            <h2>Overview &amp; Data Controller</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              This Privacy Policy applies to all services, websites, learning portals, educational digital materials, and
+              interactive sessions provided by <strong>HarishTechAi</strong>, led by Founder &amp; Instructor
+              <strong>Abhishek Patel</strong> (collectively referred to as "HarishTechAi", "we", "us", or "our").
+            </p>
+            <p>
+              By accessing our platform at <strong>HarishTechAi</strong>, enrolling in courses, submitting contact queries,
+              or utilizing our technical documentation, you acknowledge that you have read, understood, and consented to
+              the data handling practices outlined in this policy. If you disagree with any terms, please discontinue using
+              our platform.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 2: Information We Collect -->
+        <section id="information-we-collect" class="section-block">
+          <div class="section-header">
+            <div class="section-number">02</div>
+            <h2>Information We Collect</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              We collect information to deliver high-quality technical education, process course enrollments, and support
+              your career learning journey. The categories of data collected include:
+            </p>
+            <ul>
+              <li>
+                <strong>Direct Identity &amp; Contact Information:</strong> Your full name, email address, mobile/WhatsApp
+                phone number, state/country, and professional aspirations when filling forms or registering for courses.
+              </li>
+              <li>
+                <strong>Course &amp; Learning Activity Data:</strong> Modules viewed, assignments submitted, coding challenge
+                completions, hackathon submissions, and feedback responses.
+              </li>
+              <li>
+                <strong>Technical &amp; Device Information:</strong> Internet Protocol (IP) address, browser type, operating
+                system, device identifiers, time zones, referral URLs, and interactions with page elements.
+              </li>
+              <li>
+                <strong>Transaction &amp; Order Metadata:</strong> Transaction identifiers, enrollment timestamps, course SKU,
+                and payment status confirmations received from authorized payment gateways.
+              </li>
+            </ul>
+            <div class="highlight-card">
+              <h4><i class="fa-solid fa-shield-halved"></i> Sensitive Financial Data Protected</h4>
+              <p>
+                We <strong>never</strong> store your raw Debit Card numbers, Credit Card numbers, CVV codes, or net banking
+                passwords on our platform servers.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 3: How We Collect Data -->
+        <section id="how-we-collect" class="section-block">
+          <div class="section-header">
+            <div class="section-number">03</div>
+            <h2>How We Collect Data</h2>
+          </div>
+          <div class="section-body">
+            <p>We gather data through clear and ethical methods:</p>
+            <ul>
+              <li><strong>Direct Interactions:</strong> When you register on the portal, send messages via our contact form, or email us at harishtechai@gmail.com.</li>
+              <li><strong>Automated Technologies:</strong> When you navigate our platform, automated server logs and lightweight cookies capture session performance and telemetry.</li>
+              <li><strong>Payment Partners:</strong> Confirmation receipts and settlement tokens transmitted securely by authorized payment partners upon order completion.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 4: Purpose of Processing -->
+        <section id="use-of-data" class="section-block">
+          <div class="section-header">
+            <div class="section-number">04</div>
+            <h2>Purpose of Data Processing</h2>
+          </div>
+          <div class="section-body">
+            <p>We process your personal information strictly for legitimate educational, operational, and legal purposes:</p>
+            <ul>
+              <li>To provide, manage, and maintain your access to enrolled engineering courses (System Design, iOS, Cyber Security, Blockchain).</li>
+              <li>To respond promptly to student support inquiries, mentoring questions, and technical doubts.</li>
+              <li>To securely verify payment transactions and issue authentic enrollment confirmations and invoices.</li>
+              <li>To send critical operational notices, curriculum updates, scheduled live batch links, and security alerts.</li>
+              <li>To defend against cyber threats, detect fraud, protect intellectual property, and satisfy legal compliance standards in India.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 5: Payment Security & CCAvenue -->
+        <section id="payment-security" class="section-block">
+          <div class="section-header">
+            <div class="section-number">05</div>
+            <h2>Payment Security &amp; CCAvenue Integration</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              All online fee payments, course enrollments, and transactions conducted on HarishTechAi are powered by
+              reputable, RBI-authorized payment aggregator platforms, primarily <strong>CCAvenue</strong> (Avenues India Pvt. Ltd.).
+            </p>
+            <ul>
+              <li>
+                <strong>PCI-DSS Level 1 Compliance:</strong> CCAvenue maintains the highest global payment card industry security
+                certification, utilizing 256-bit SSL encryption for all transaction data transmissions.
+              </li>
+              <li>
+                <strong>Direct Gateway Redirection:</strong> When checking out, your sensitive financial parameters are entered directly
+                into CCAvenue's encrypted payment switch without ever touching our servers.
+              </li>
+              <li>
+                <strong>Webhook Verification:</strong> HarishTechAi only receives a cryptographically signed verification message confirming
+                whether payment was successful, authorized, or cancelled.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 6: Cookies & Tracking -->
+        <section id="cookies" class="section-block">
+          <div class="section-header">
+            <div class="section-number">06</div>
+            <h2>Cookies &amp; Tracking Technologies</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              We use minimal cookies and local browser storage to provide smooth website functionality:
+            </p>
+            <ul>
+              <li><strong>Essential Session Cookies:</strong> Required to keep you authenticated and preserve navigation context between pages.</li>
+              <li><strong>Performance &amp; Analytics:</strong> Anonymous telemetry to help us understand page load speeds and optimize user interface design.</li>
+              <li><strong>Preference Cookies:</strong> Storing local UI settings like dark mode preferences and active course filters.</li>
+            </ul>
+            <p>
+              You may freely disable or clear cookies through your browser settings, though certain interactive features may
+              operate with reduced functionality.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 7: Data Sharing & Disclosure -->
+        <section id="data-sharing" class="section-block">
+          <div class="section-header">
+            <div class="section-number">07</div>
+            <h2>Data Sharing &amp; Third-Party Disclosure</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              <strong>HarishTechAi will never sell your personal information.</strong> We only share minimal data in these limited circumstances:
+            </p>
+            <ul>
+              <li><strong>Trusted Technical Service Providers:</strong> Cloud hosting servers, video delivery networks, and transactional email gateways bound by confidentiality agreements.</li>
+              <li><strong>Payment Aggregators:</strong> CCAvenue and authorized banking switches to fulfill student payments and verified refund processing.</li>
+              <li><strong>Legal Compliance:</strong> When strictly mandated by court orders, statutory law enforcement bodies, or regulatory authorities under Indian legislation.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 8: Retention & Storage -->
+        <section id="data-retention" class="section-block">
+          <div class="section-header">
+            <div class="section-number">08</div>
+            <h2>Data Retention &amp; Storage</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              Personal data is maintained only as long as required to deliver our educational programs, resolve disputes, and
+              comply with tax and statutory record-keeping guidelines under Indian commercial laws.
+            </p>
+            <p>
+              When an account is decommissioned or data retention limits expire, records are securely scrubbed, sanitized, or
+              anonymized beyond recovery.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 9: Your Privacy Rights -->
+        <section id="user-rights" class="section-block">
+          <div class="section-header">
+            <div class="section-number">09</div>
+            <h2>Your Privacy Rights</h2>
+          </div>
+          <div class="section-body">
+            <p>Subject to applicable data protection regulations, you hold the following rights regarding your personal records:</p>
+            <ul>
+              <li><strong>Right to Access &amp; Review:</strong> Request a copy of the personal details stored with us.</li>
+              <li><strong>Right to Correction:</strong> Request updates or corrections to any inaccurate contact information.</li>
+              <li><strong>Right to Erasure:</strong> Request deletion of your personal account records, subject to legal obligations.</li>
+              <li><strong>Right to Opt-Out:</strong> Unsubscribe from non-essential educational newsletters and updates with one click.</li>
+            </ul>
+            <p>
+              To exercise any of these privileges, please send a written request to <strong>harishtechai@gmail.com</strong> from your registered email.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 10: Minor / Children Privacy -->
+        <section id="children" class="section-block">
+          <div class="section-header">
+            <div class="section-number">10</div>
+            <h2>Children &amp; Minor Privacy</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              HarishTechAi courses are geared toward engineering college students, software developers, and professionals.
+              We do not knowingly collect personal information from individuals under the age of 13. Minors between 13 and 18
+              may only access paid courses with the consent and oversight of a parent or legal guardian.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 11: Updates to Policy -->
+        <section id="policy-updates" class="section-block">
+          <div class="section-header">
+            <div class="section-number">11</div>
+            <h2>Updates to this Privacy Policy</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              We periodically review and update this policy to reflect platform updates, enhanced security standards, or
+              regulatory modifications. The latest revision date will always appear at the top of this document. Continued
+              use of HarishTechAi after updates signifies acceptance of the revised terms.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 12: Grievance Officer & Contact -->
+        <section id="contact-us" class="section-block">
+          <div class="section-header">
+            <div class="section-number">12</div>
+            <h2>Grievance Redressal &amp; Contact</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              For questions, concerns, or grievances regarding our privacy policy or data practices, please contact our
+              designated Grievance Officer:
+            </p>
+
+            <div class="contact-card">
+              <div class="contact-info-item">
+                <div class="icon"><i class="fa-solid fa-user-tie"></i></div>
+                <div>
+                  <div class="label">Grievance Officer</div>
+                  <div class="val">Abhishek Patel</div>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <div class="label">Official Email</div>
+                  <div class="val"><a href="mailto:harishtechai@gmail.com">harishtechai@gmail.com</a></div>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <div class="label">Phone / WhatsApp</div>
+                  <div class="val"><a href="tel:7611140772">+91 7611140772</a></div>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <div class="label">Jurisdiction</div>
+                  <div class="val">India</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Brand column -->
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span>Harish</span>Tech<span>Ai</span>
+        </a>
+        <p>
+          Empowering future software engineers with deep mastery in System Design, iOS Engineering, Cyber Security, and
+          Blockchain Development.
+        </p>
+        <div class="footer-social-links">
+          <a href="https://www.linkedin.com/in/abhishek-patel-b68ab4277/" target="_blank" title="LinkedIn"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@HarishTechAi" target="_blank" title="YouTube"><i
+              class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com/harishtechai?igsh=MWxvNGt5Ym0wa3p4ZQ==" target="_blank"
+            title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1BzySK3huU/" target="_blank" title="Facebook"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://whatsapp.com/channel/0029VbDMzARHQbS3D6PaCd0p" target="_blank" title="WhatsApp Channel"><i
+              class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#learning">Courses</a></li>
+          <li><a href="docs.html">Documentation</a></li>
+          <li><a href="hackathons.html">Hackathons</a></li>
+          <li><a href="coding-practice.html">Coding Practice</a></li>
+        </ul>
+      </div>
+
+      <!-- Specialized Courses -->
+      <div class="footer-column">
+        <h4>Core Programs</h4>
+        <ul>
+          <li><a href="system-design.html">System Design</a></li>
+          <li><a href="ios-development.html">iOS Development</a></li>
+          <li><a href="cyber-security.html">Cyber Security</a></li>
+          <li><a href="blockchain-development.html">Blockchain Dev</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal & Compliance -->
+      <div class="footer-column">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="privacy-policy.html" style="color: var(--accent-yellow); font-weight: 600;">Privacy Policy</a></li>
+          <li><a href="refund-policy.html">Refund &amp; Cancellation</a></li>
+          <li><a href="index.html#contact">Contact Support</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright Sub-Footer -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 HarishTechAi. All rights reserved. Educational Platform by Abhishek Patel.</p>
+      <p>Secure Payments powered by CCAvenue &bull; India Jurisdiction</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
